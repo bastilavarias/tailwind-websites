@@ -8,7 +8,10 @@
                     >
                 </router-link>
             </div>
-            <a href="" target="_blank">
+            <a
+                href="https://github.com/bastilavarias/tailwind-websites"
+                target="_blank"
+            >
                 <span class="text-blue-600 text-sm underline"
                     >Source Code (GitHub)</span
                 >
