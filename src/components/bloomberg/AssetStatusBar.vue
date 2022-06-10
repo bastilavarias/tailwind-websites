@@ -46,7 +46,9 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex flex-row justify-between py-1 px-2 border-b-2 border-gray">
+    <div
+        class="flex flex-row justify-between py-1 px-2 border-b-2 border-gray overflow-y-auto space-x-5 md:space-x-3 lg:space-x-1 xl:space-x-0"
+    >
         <template v-for="(asset, index) in assets" :key="index">
             <div class="flex flex-row space-x-2 items-center justify-between">
                 <div class="flex flex-row text-base font-medium">

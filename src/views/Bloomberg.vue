@@ -2,9 +2,16 @@
 import { defineComponent } from 'vue';
 import BloombergSystemBar from '../components/bloomberg/SystemBar.vue';
 import BloombergAssetStatusBar from '../components/bloomberg/AssetStatusBar.vue';
+import BloombergHeader from '../components/bloomberg/Header.vue';
+import BloombergNavBar from '../components/bloomberg/NavBar.vue';
 
 export default defineComponent({
-    components: { BloombergAssetStatusBar, BloombergSystemBar },
+    components: {
+        BloombergNavBar,
+        BloombergHeader,
+        BloombergAssetStatusBar,
+        BloombergSystemBar,
+    },
     setup() {
         document.title = 'Website #2 (Bloomberg)';
     },
@@ -15,8 +22,10 @@ export default defineComponent({
     <main>
         <bloomberg-system-bar></bloomberg-system-bar>
 
-        <section class="container mx-auto border-x border-black">
+        <section class="lg:container mx-auto md:border-x md:border-black">
             <bloomberg-asset-status-bar></bloomberg-asset-status-bar>
+            <bloomberg-header></bloomberg-header>
+            <bloomberg-nav-bar></bloomberg-nav-bar>
         </section>
     </main>
 </template>
