@@ -3,14 +3,14 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        name: 'site-one',
-        component: () => import('../views/SiteOne.vue'),
+        name: 'manage',
+        component: () => import('../views/Manage.vue'),
     },
 
     {
-        path: '/site-two',
-        name: 'site-two',
-        component: () => import('../views/SiteTwo.vue'),
+        path: '/bloomberg',
+        name: 'bloomberg',
+        component: () => import('../views/Bloomberg.vue'),
     },
 ];
 
