@@ -2,8 +2,6 @@
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-    name: 'Home',
-
     setup() {
         document.title = 'Website #1 (Manage)';
         let isMenuOpen = ref(false);
@@ -408,7 +406,7 @@ export default defineComponent({
     </main>
 </template>
 
-<style>
+<style scoped>
 body {
     background-image: url('../assets/bg-tablet-pattern.svg');
     background-repeat: no-repeat;

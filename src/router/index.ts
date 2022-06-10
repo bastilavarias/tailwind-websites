@@ -6,6 +6,12 @@ const routes: Array<RouteRecordRaw> = [
         name: 'site-one',
         component: () => import('../views/SiteOne.vue'),
     },
+
+    {
+        path: '/site-two',
+        name: 'site-two',
+        component: () => import('../views/SiteTwo.vue'),
+    },
 ];
 
 const router = createRouter({
