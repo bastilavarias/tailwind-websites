@@ -11,9 +11,11 @@ import BloombergOpinion from '../components/bloomberg/Opinion.vue';
 import BloombergNewsLetterForm from '../components/bloomberg/NewsLetterForm.vue';
 import BloombergMoreNews from '../components/bloomberg/MoreNews.vue';
 import BloombergTrendingNews from '../components/bloomberg/TrendingNews.vue';
+import BloombergFooter from '../components/bloomberg/Footer.vue';
 
 export default defineComponent({
     components: {
+        BloombergFooter,
         BloombergTrendingNews,
         BloombergMoreNews,
         BloombergNewsLetterForm,
@@ -36,7 +38,9 @@ export default defineComponent({
     <main>
         <bloomberg-system-bar></bloomberg-system-bar>
 
-        <section class="lg:container mx-auto md:border-x md:border-black">
+        <section
+            class="flex flex-col pb-10 lg:container mx-auto md:border-x md:border-black"
+        >
             <bloomberg-asset-status-bar></bloomberg-asset-status-bar>
             <bloomberg-header></bloomberg-header>
             <bloomberg-nav-bar></bloomberg-nav-bar>
@@ -58,7 +62,6 @@ export default defineComponent({
                 </div>
             </div>
         </section>
-
-        <footer class="mt-20"></footer>
+        <bloomberg-footer></bloomberg-footer>
     </main>
 </template>
