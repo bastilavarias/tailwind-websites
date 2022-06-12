@@ -9,9 +9,11 @@ import BloombergLatestNews from '../components/bloomberg/LatestNews.vue';
 import BloombergHighlight from '../components/bloomberg/Highlight.vue';
 import BloombergOpinion from '../components/bloomberg/Opinion.vue';
 import BloombergNewsLetterForm from '../components/bloomberg/NewsLetterForm.vue';
+import BloombergMoreNews from '../components/bloomberg/MoreNews.vue';
 
 export default defineComponent({
     components: {
+        BloombergMoreNews,
         BloombergNewsLetterForm,
         BloombergOpinion,
         BloombergHighlight,
@@ -42,8 +44,9 @@ export default defineComponent({
                     <div class="w-1/6">
                         <bloomberg-latest-news></bloomberg-latest-news>
                     </div>
-                    <div class="w-7/12">
+                    <div class="w-7/12 flex flex-col space-y-5">
                         <bloomberg-highlight></bloomberg-highlight>
+                        <bloomberg-more-news></bloomberg-more-news>
                     </div>
                     <div class="w-3/12 flex flex-col space-y-5">
                         <bloomberg-opinion></bloomberg-opinion>
