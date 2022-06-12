@@ -18,6 +18,7 @@ module.exports = {
                 veryPaleRed: 'hsl(13, 100%, 96%)',
                 veryLightGray: 'hsl(0, 0%, 98%)',
                 bloombergOrange: '#FFA01C',
+                bloombergBlue: '#0068FF',
             },
         },
         fontFamily: {

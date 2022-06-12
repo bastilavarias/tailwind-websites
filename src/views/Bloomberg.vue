@@ -7,9 +7,11 @@ import BloombergNavBar from '../components/bloomberg/NavBar.vue';
 import BloombergHeadline from '../components/bloomberg/Headline.vue';
 import BloombergLatestNews from '../components/bloomberg/LatestNews.vue';
 import BloombergHighlight from '../components/bloomberg/Highlight.vue';
+import BloombergOpinion from '../components/bloomberg/Opinion.vue';
 
 export default defineComponent({
     components: {
+        BloombergOpinion,
         BloombergHighlight,
         BloombergLatestNews,
         BloombergHeadline,
@@ -38,10 +40,12 @@ export default defineComponent({
                     <div class="w-1/6">
                         <bloomberg-latest-news></bloomberg-latest-news>
                     </div>
-                    <div class="w-6/12">
+                    <div class="w-7/12">
                         <bloomberg-highlight></bloomberg-highlight>
                     </div>
-                    <div></div>
+                    <div class="w-3/12">
+                        <bloomberg-opinion></bloomberg-opinion>
+                    </div>
                 </div>
             </div>
         </section>
