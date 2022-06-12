@@ -57,15 +57,15 @@ export default defineComponent({
 
 <template>
     <div class="flex flex-row flex-wrap justify-between">
-        <template v-for="(news, index) in news" :key="index">
+        <template v-for="(item, index) in news" :key="index">
             <div class="w-1/4 flex flex-col space-y-1 pt-2 py-5">
                 <a href="#" class="text-sm hover:underline">{{
-                    news.category
+                    item.category
                 }}</a>
                 <a href="#" class="text-md font-bold hover:underline">
-                    {{ news.title }}
+                    {{ item.title }}
                 </a>
-                <span class="text-xs text-gray-500">{{ news.time }}</span>
+                <span class="text-xs text-gray-500">{{ item.time }}</span>
             </div>
         </template>
     </div>
