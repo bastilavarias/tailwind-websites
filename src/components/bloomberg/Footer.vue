@@ -32,7 +32,7 @@ export default defineComponent({
                     class="text-xs text-gray-500 cursor-pointer hover:underline"
                     >Privacy Policy</a
                 >
-                <p href="" class="text-xs text-gray-500">
+                <p class="text-xs text-gray-500">
                     ©2022 Bloomberg L.P. All Rights Reserved
                 </p>
             </div>
